@@ -1,0 +1,82 @@
+{% extends 'beautyapp/index.html' %}
+
+{%load static%}
+{%block about%}
+
+   <div class="clear"></div><div class="page_holder_inner">
+   <div class="page_holder">
+            <div class="title_inner"><span><a href="{%url 'home'%}">HOME /</a></span> ABOUT US</div>
+<div class="center_2_left_inner">
+	<img src="{%static 'beautyapp/images/Manik-Soni.jpg'%}" width="200" height="224" class="imgborder" />
+	<p style="margin:15px 15px 15px 0px; line-height:18px;" align="justify" class="normal-text">
+    12th June 2001, Bangalore: Charisma, which means 'A personal attractiveness or interestingness that enables you to influence others most beautiful' <strong>Mr Manik Soni</strong> in his endeavor. Charisma brings to you the Thai & Ballini concept of luxury and holistic treatments to Bangalore & Mumbai. This one of kind beauty spa salon & slimming center we have in Bangalore 	& Mumbai and very soon opening in other countries.</p>
+	<p style="margin:15px 15px 15px 0px; line-height:18px;" align="justify" class="normal-text">Charisma, which have been styled by one of the biggest interior designer from Bangalore is inspired by Thai and Bali influences. The spa and salon is an oasis unto itself which offers a serene and blissful epicenter of holistic processes where the mind body and soul undergo a complete process of relaxation and rejuvenation. The diverse array of exotic spa therapies coupled with well researched preparations of aromatic and therapeutic oils transport you onto a different plane. The pink colour & Glass product display offset by magnificent rooms made by bamboo sticks and scent of mild lingering fragrances with specially Jaccuzzi designed in a such way give a stylish touch to the ambience while maintaining its raw and rustic feel.</p>
+	<p style="margin:15px 15px 15px 0px; line-height:18px;" align="justify" class="normal-text">The Salon section of Charisma pampers you with its unique Hair Spas, Facials, Nail Art, Manicure and Pedicure, Slimming and Skin services, Services for Men and Women. We also offer special Bride & Groom Packages.</p>
+	<p style="margin:15px 15px 0px 0px; line-height:18px;" align="justify" class="normal-text">Speaking about the Spa and Salon <strong>Mr. Manik Soni</strong> of Charisma says, "Having explored the spa industry for over 12 years, it is my pleasure to bring to you the amalgamation of luxury and holistic treatments under one roof, which is Charisma Spa & Salon in Bangalore & Mumbai".</p>
+    <img src="{%static 'beautyapp/images/team_pic.jpg'%}" width="271" height="218" class="imgborder-rgt" />
+    <p style="margin:15px 15px 0px 0px; line-height:18px;" align="justify" class="serv_title">Our Team</p>
+	<p style="margin:15px 15px 0px 0px; line-height:18px;" align="justify" class="normal-text">With Charisma Spa & Salon we have attempted to redefine the concept of luxury and relaxation in an environment that will lull your senses into peaceful submission. It is our pleasure to welcome our guest to this unique and one of a kind experience.</p>
+	<p style="margin:15px 15px 0px 0px; line-height:18px;" align="justify" class="normal-text">Charisma Spa and Salon opens its doors to you 12 Years back and welcomes you to indulge in a one of a kind experience. At Charisma Spa and Salon, we believe that the power of indulgence is such a potent healer, that it has the ability to revive an energy depleted body and soul. Rooted in tradition, with techniques incorporated from Thailand and Bali, Charisma is not just the pioneer of high-end Luxury day spas in India, but also soon to be a rapidly expanding franchise.</p>
+	<p style="margin:15px 15px 0px 0px; line-height:18px;" align="justify" class="normal-text">Charisma Spa also proudly brings you the best treatments for the very first time in India. Charisma spa is with full of highly professional team from Hair Stylist, Skin , Slimming & Massage Therapist (gives Pure Traditional Ayurvedic massage from South India, Thai & Ballini massage from Thailand and Bali and Other world wide polular Massage like Swedish, Deep Tissue, Aroma with Steam & Sauna and the best treatment "Cleaopatra Bath", which is unique in Charisma Spa only.</p>
+    </div><!-- center_2_left_inner  end-->
+  <div class="right_bar">
+    <div class="quick-enquiry">
+    <div class="title_bg2">QUICK ENQUIRY</div>
+        <form name="qform" id="qform" method="post" action="" >
+        <div style="margin:0px; width:100%px;">
+        <p style=" margin:10px;" align="center" class="normal-text">Note: The fields marked with (*) are compulsory.</p>
+        <div style="width:60px; float:left; margin-left:8px; margin-top:5px;">
+    <p style="line-height:25px; margin-top:10px; margin-bottom:0px;" align="right" class="normal-text"  > <strong>* Name : </strong></p>
+    <p style="line-height:25px; margin:22px 0px 9px 0px;"  align="right" class="normal-text"> <strong>* Email :</strong></p>
+    <p style="line-height:25px; margin:22px 0px 0px 0px;" align="right" class="normal-text"> <strong>* Mobile :</strong></p>
+        </div><!-- left end text_fields-->
+		<div style="float:left; width:220px; margin-left:5px; margin-top:5px;">
+<p style="line-height:45px; margin-top:10px;" align="left" ><input name="qname" id="name" type="text" required="required" class="text_fields2" /></p>
+<p style="line-height:45px; margin-top:18px;" align="left" ><input name="qemail" id="qemail" type="email" required="required"  class="text_fields2" /></p>
+<p style="line-height:45px; margin-top:18px;" align="left" ><input name="qmobile" placeholder="10 digit mobile number" maxlength="10" id="qmobile" rows="5" class="text_fields2"  required="required" /></p>
+<p style="margin:0px;" align="right"><input name="qsubmit" type="submit" id="qsubmit" class="submit_bttn" value="Submit" /></p>
+		</div>
+		</div>
+</form>
+            </div><!-- quick enquiry end-->
+            <div class="clear"></div>
+		<div style="width:100%; margin-top:20px;">
+   		<div class="title_bg2">GIFT A FRIEND</div>
+   <a href="gift-voucher.html"><img src="{%static 'beautyapp/images/gift_inner.jpg'%}" width="282" height="153" border="0" style="margin:10px;" /></a>
+        </div>
+        <div style="width:100%; margin-top:20px;">
+   		<div class="title_bg2">WORKING HOURS</div>
+        <p style="margin:10px" class="time" ><span>Monday to Sunday :</span> 10am - 10pm</p>
+		<p style="margin:10px;" class="normal-text" align="left" ><strong>Bangalore </strong>  <br />Phone No: +91 80 41313530/ 41171269</p>
+		<p style="margin:10px;" class="normal-text" align="left" ><strong>Mumbai,  Andheri ( W )  </strong>  <br />
+		  Mobile No:  098204 32494</p>
+		<p style="margin:10px;" class="normal-text" align="left" ><strong>Mumbai,  Bandra ( W )  </strong>  <br />Phone No: + 91 22-26421380 / 81 / 82</p>
+        </div>
+</div>
+                    <div class="services">
+                    	<div class="title_bg" style="margin-top:10px;">SERVICES</div>
+                        <div class="serv_cat">
+                        	<p style="margin:0px;" align="center" > <a href="#" class="serv_title">Men's Services</a></p>
+                        	<p style="margin:0px;" align="center" class="serv_title"><a href="{%static 'beautyapp/images/for_him.jpg'%}" target="_blank"><img src="{%static 'beautyapp/images/men_services.png'%}" width="222" height="222" border="0" /></a></p>
+                          <p style="margin:5px;" align="justify" class="ser-text">Charisma Spa Pvt Ltd offers Men's Services which include distinctly designed services to ease down stress, along with good health and relaxation to your everyday life. </p>
+                        </div><!-- serv cat end-->
+          <div class="serv_cat" >
+                        	<p style="margin:0px;" align="center" > <a href="#" class="serv_title">Skin Care</a></p>
+                        	<p style="margin:0px;" align="center" class="serv_title"><a href="{%static 'beautyapp/images/skin_care.jpg'%}" target="_blank"><img src="{%static 'beautyapp/images/skincare.png'%}" width="222" height="222" border="0" /></a></p>
+                          <p style="margin:5px;" align="justify" class="ser-text">Charisma Spa is dedicated to reinvent your salon experience. Our skin care services are provided keeping in mind the requirements of contemporary Indian woman. So, in case you want to reinvent your look, feel free to visit us.</p>
+                      </div><!-- serv cat end-->
+          <div class="serv_cat">
+                        	<p style="margin:0px;" align="center" > <a href="#" class="serv_title">Bridal Services</a></p>
+                        	<p style="margin:0px;" align="center" class="serv_title"><a href="{%static 'beautyapp/images/pre_bridal.jpg'%}" target="_blank"><img src="{%static 'beautyapp/images/bridal-services.png'%}" width="222" height="222" border="0" /></a></p>
+                          <p style="margin:5px;" align="justify" class="ser-text"> Wedding is the most cherished moment in life of every woman. We, at Charisma Spa Pvt. Ltd. offer you a host to bridal services, according to your beauty needs.</p>
+                      </div><!-- serv cat end-->
+          <div class="serv_cat2" >
+                        	<p style="margin:0px;" align="center" > <a href="#" class="serv_title">Body Treatment</a></p>
+                        	<p style="margin:0px;" align="center" class="serv_title"><a href="{%static 'beautyapp/images/body_care.jpg'%}" target="_blank"><img src="{%static 'beautyapp/images/body-treatment.png'%}" width="222" height="222" border="0" /></a></p>
+                          <p style="margin:5px;" align="justify" class="ser-text"> Don't have time for a thorough body treatment? Take your physique to the next level with our Charisma Spa formula. Find the most up-to-date cure and healing information here. </p>
+                      </div><!-- serv cat end-->
+                    </div><!-- services end-->
+                    <div class="clear"></div>
+</div><!-- pageholder end-->
+</div><!-- pageholder inner end-->
+{%endblock%}
