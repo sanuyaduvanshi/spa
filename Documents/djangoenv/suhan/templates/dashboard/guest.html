@@ -1,0 +1,65 @@
+{% extends 'dashboard/index.html' %}
+{% load static %}
+{% block guest%}
+<div class="container">
+<form  action="{% url 'guest' %}" method="POST">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="gname">Client Name</label>
+        <input type="text" name="name" class="form-control"  required="required"/>
+</div>
+
+<div class="form-group">
+    <label for="mno">Mobile No</label>
+    <input type="text" name="mobileno" class="form-control"  required="required"/>
+</div>
+
+<div class="form-group">
+    <label for="service"> Treatment Service</label>
+    <input type="text" name="service" class="form-control"  required="required"/>
+</div>
+
+<div class="form-group">
+    <label for="service"> Treatment By</label>
+    <input type="text" name="serviceby" class="form-control"  required="required"/>
+</div>
+
+<div class="form-group">
+    <label for="duration">Duration</label>
+    <input type="text" name="duration" class="form-control"  required="required"/>
+</div>
+
+<div class="form-group">
+    <label for="timein">Time In</label>
+    <input type="time" name="timeout" class="form-control"  required="required"/>
+</div>
+
+<div class="form-group">
+    <label for="timeout">Time Out</label>
+    <input type="time" name="timeout" class="form-control"  required="required"/>
+</div>
+
+<div class="form-group">
+    <label for="totaltime">Total Time</label>
+    <input type="time" name="totaltime" class="form-control"  required="required"/>
+</div>
+
+<div class="form-group">
+    <label for="service">Price</label>
+    <input type="time" name="extime" class="form-control"  required="required"/>
+</div>
+
+
+
+<div class="form-group">
+    <label for="pm">Payment MOD</label>
+    <input type="text" name="paym" class="form-control"  required="required"/>
+</div>
+
+        <button type="submit" class="btn btn-lg btn-primary">Save</button>
+
+</form>
+</div>
+<br />
+
+{%endblock%}

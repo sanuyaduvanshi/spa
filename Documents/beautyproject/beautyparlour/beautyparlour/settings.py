@@ -24,7 +24,13 @@ SECRET_KEY = '-7s70*ui@0ef_m+^^-#utzl7$=f-9wz^4s=qt_w=%et#i!yc+3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+DEBUG = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sandeepyadavjnp01@gmail.com'
+EMAIL_HOST_PASSWORD = 'Prince@94'
 ALLOWED_HOSTS = []
 
 
@@ -71,13 +77,13 @@ TEMPLATES = [
 WSGI_APPLICATION = 'beautyparlour.wsgi.application'
 
 #email backends
-EMAIL_BACKEND='django.core.mail.backends.smptp.EMAILBACKEND'
-EMAIL_HOST='smptp.gmail.com'
-EMAIL_HOST_USER='infodivsolution@gmail.com'
-EMAIL_HOST_PASSWORD='Infodiv$123456'
-EMAIL_PORT=587
-EMAIL_USE_TLS=True
-
+DEBUG = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sandeepyadavjnp01@gmail.com'
+EMAIL_HOST_PASSWORD = 'Prince@94'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
